@@ -1,0 +1,59 @@
+let cards = `
+[
+    {
+        "title": "Coding",
+        "priority": 2,
+        "description": "I should do my codereview. Next week will be another one",
+        "image": "images/coding.jpg",
+        "deadline": "01.06.2022"
+    },{
+        "title": "Cooking",
+        "priority": 3,
+        "description": "Pre-cooking this week to have more timer later on. Eating healthy",
+        "image": "images/cooking.jpg",
+        "deadline": "02.06.2022"
+    },{
+        "title": "Gaming",
+        "priority": 1,
+        "description": "Playing some nice and relaxing games together with friends",
+        "image": "images/gaming.jpg",
+        "deadline": "03.06.2022"
+    },{
+        "title": "Partying",
+        "priority": 0,
+        "description": "It's XY birthday and we celebrate in a small bar in vienna",
+        "image": "images/drinking.jpg",
+        "deadline": "04.06.2022"
+    },{
+        "title": "Doing laundry",
+        "priority": 1,
+        "description": "Should finally do my laundry. The clothes already pile up",
+        "image": "images/laundry.jpg",
+        "deadline": "05.06.2022"
+    },{
+        "title": "Building Lego",
+        "priority": 0,
+        "description": "Finishing my cool lego set I recieved as a christmas gift",
+        "image": "images/lego.jpg",
+        "deadline": "06.06.2022"
+    },{
+        "title": "Mediate",
+        "priority": 1,
+        "description": "Taking some time off in the evening to do some meditation after hard days",
+        "image": "images/meditate.jpg",
+        "deadline": "07.06.2022"
+    },{
+        "title": "Working out",
+        "priority": 2,
+        "description": "This week I want to excercise atleast 3 times - in the gym or outside",
+        "image": "images/training.jpg",
+        "deadline": "08.06.2022"
+    },{
+        "title": "Relaxing body & mind",
+        "priority": 4,
+        "description": "Taking some me-time and have a long bath or enjoy the evening with a movie",
+        "image": "images/relax.jpg",
+        "deadline": "09.06.2022"
+    }
+]
+`
