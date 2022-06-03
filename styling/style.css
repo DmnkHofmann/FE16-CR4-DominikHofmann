@@ -16,3 +16,13 @@
     transform: translate(-50%, -50%);
     font-family: Arial, Helvetica, sans-serif;
 }
+.taskimage {
+    height: 252px;
+    width: 100%;
+}
+.subscribe {
+    color: white;
+    border: solid 1px white;
+    background-color: transparent;
+    border-radius: 3px;
+  }
