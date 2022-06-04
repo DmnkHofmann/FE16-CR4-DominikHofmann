@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/slider.png" height="20px" class="icon-p">MyPlanner
+                <img src="images/slider.png" height="20px" class="icon-p"> MyPlanner
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,14 +54,18 @@
         </div>
     </div>
     <div class="container">
-        <div class="row d-flex justify-content-between">
-            <h4>Weekly Tasks</h4>
-            <h5>Sort by priority: <i class="bi bi-filter" id="priority-sort"></i></h3>
+        <div class="row d-flex justify-content-between mt-4 mb-4">
+            <div class="col-7">
+                <h4>Weekly Tasks</h4>
+            </div>
+            <div class="class col-5">
+                <h5 style="text-align:right">Sort by priority: <i class="bi bi-filter" id="priority-sort"></i></h3>
+            </div>
         </div>
         <div class="row" id="results">
         </div>
     </div>
-    <footer class="bg-dark">
+    <footer class="bg-dark mt-5">
         <div class="container">
             <div class="d-flex justify-content-center py-4">
                 <div class="socials">
@@ -85,20 +90,17 @@
             <div class="newsletter row d-flex text-light justify-content-center">
                 <div class="col-2 py-2">Sign up for our newsletter</div>
                 <input class="col-6 py-2" type="email">
-                <input type="button" class="subscribe mx-1 col-2 py-2 p-lg-1" value="Subscribe">
+                <input type="button" class="subscribe mx-4 col-2 py-2 p-lg-1" value="Subscribe">
             </div>
             <div class="copyright pt-3 text-white text-center">&copy; 2022 Dominik Hofmann</div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="json/data.json"></script>
     <script src="javascript/script.js"></script>
 </body>
 
 </html>
-
-
-

@@ -4,26 +4,47 @@ function updateHTML(arr) {
     resultscontainer.innerHTML = "";
     for (let x of arr) {
         resultscontainer.innerHTML += `
-<div class="col-lg-4 col-sm-6 col-xs-12">
-    <div class="card"   >
+<div class="col-lg-4 col-sm-6 col-xs-12 my-3">
+    <div class="card shadow-lg bg-body rounded">
+        <div class="row">
+        <div class="col-12">
+        <div class="row d-flex justify-content-between">
+        <div class="col-4">
+        <button type="button" class="btn btn-info m-1 py-1">Task</button>
+        </div>
+        <div class="col-4 pt-2" style="text-align:right">
+        <span><i class="bi bi-bookmark"></i></span> 
+        <span><i class="bi bi-three-dots-vertical"></i></span>
+        </div>
+        </div>
+        </div>
+        <div class="col-12">
         <img src="${x.image}" class="card-img-top img-thumbnail taskimage" alt="HansZimmer">
+        </div>
+        </div>
         <div class="card-body">
             <div class="row">
-                <h5>${x.title}</h5>
-                <p class="card-text">${x.description}.</p>
-                <hr>
-                <div class="row">
                 <div class="col-md-12">
-                    <p><i class="bi bi-exclamation-triangle-fill"></i> Priority level:</p> 
-                    <button class="btn-priority btn ${prioritybuttonclass(x.priority)}"> ${x.priority}</button>
+                    <h5 class="text-center">${x.title}</h5>
+                    <p class="card-text text-center">${x.description}.</p>
+                    <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <span><i class="bi bi-exclamation-triangle-fill"></i> Priority level:</span>   
+                        <button class="btn-priority btn ${prioritybuttonclass(x.priority)}"> ${x.priority}</button>
                     </div>
-                    </div>
-                <p><i class="bi bi-calendar4-week"></i> Deadline: ${x.deadline}</p>
-                <hr>
-                <div class="col-md-4 mx-2 d-flex align-items-center">
-                <button type="button" class="btn btn-danger d-flex align-items-center"><i class="bi bi-trash-fill"></i> Delete</button>
-                <button type="button" class="btn btn-success d-flex align-items-center"><i class="bi bi-check-circle"></i> Done</button>
                 </div>
+                <div class="row">
+                    <p><i class="bi bi-calendar4-week"></i> Deadline: ${x.deadline}</p>
+                    <hr>
+                 </div>
+                <div class="row">
+                    <div class="col-md-12 text-end">
+                        <button type="button" class="btn btn-danger"><i class="bi bi-trash-fill"></i> Delete</button>
+                        <button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i> Done</button>
+                     </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
